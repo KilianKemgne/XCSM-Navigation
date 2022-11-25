@@ -1,8 +1,6 @@
 
 let xmlContent = '';
-let NotionList = document.getElementById('desc-notions');
 let courseName = document.getElementById('course-name');
-let nodeList = document.getElementById('node-desc');
 let node = document.getElementById('node');
 
 
@@ -41,21 +39,31 @@ fetch('../description.xml').then((response) => {
         // }
         
         parties.forEach((partie) => {
+
+            let mainLi = document.createElement('li');
+            mainLi.setAttribute("class", "menu-item")
+
             let main = document.createElement('a');
             main.innerText = partie.nodeName + ' ' + partie.id;
             main.setAttribute("class", "menu-link menu-toggle");
-            let li = document.createElement('li');
-            let a = document.createElement('a');
-   
-            a.innerText = partie.children[0].nodeName + ' ' + partie.children[0].id;
-            a.setAttribute("class", "menu-link");
-            li.appendChild(a);
-            li.setAttribute("class", "menu-item");
-            //li.appendChild(li);
-   
-            NotionList.appendChild(li);
-            nodeList.append(main, NotionList);
-            node.append(nodeList);
+            
+            let ul = document.createElement('ul');
+            ul.setAttribute("class", "menu-sub");
+            for (const chap of partie.children) {
+                let a = document.createElement('a');
+                a.innerText = chap.nodeName + ' ' + chap.id;
+                a.setAttribute("class", "menu-link");
+                a.setAttribute("href", "javascript:void(0)");
+
+                let li = document.createElement('li');
+                li.appendChild(a);
+                li.setAttribute("class", "menu-item");
+                
+                ul.appendChild(li);
+            }
+            
+            mainLi.append(main, ul);
+            node.append(mainLi);
        });
 
        

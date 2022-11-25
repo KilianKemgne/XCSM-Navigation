@@ -72,7 +72,7 @@
 
           <div class="menu-inner-shadow"></div>
 
-          <ul class="menu-inner py-1" id="desc-notions">
+          <ul class="menu-inner py-1" id="node">
             <!-- Dashboard -->
             <li class="menu-item">
               <a href="index.html" class="menu-link">
@@ -82,26 +82,9 @@
             </li>
 
             <!-- Forms & Tables -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Plan du cours</span></li>
+            <li class="menu-header small text-uppercase"><span class="menu-header-text" id="course-name">Plan du cours</span></li>
             <!-- Forms -->
-            <!-- <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-detail"></i>
-                <div data-i18n="Form Elements">Form Elements</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="forms-basic-inputs.html" class="menu-link">
-                    <div data-i18n="Basic Inputs">Basic Inputs</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="forms-input-groups.html" class="menu-link">
-                    <div data-i18n="Input groups">Input groups</div>
-                  </a>
-                </li>
-              </ul>
-            </li> -->
+            
             
           </ul>
         </aside>
@@ -138,13 +121,33 @@
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <li class="nav-item lh-1 me-1">
-                  <button class="btn btn-outline-primary">Mode Edition</button>
+                  <button class="btn btn-outline-primary">Enregistrer</button>
+                </li>
+                <li class="nav-item lh-1 me-1">
+                  <button class="btn btn-outline-primary"><a href="index.html">Quitter</a></button>
                 </li>
               </ul>
             </div>
           </nav>
 
           <!-- / Navbar -->
+
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme align-content-xl-center"
+            id="layout-navbar"
+          >
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-style1 my-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html">XCSM</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Edition</a>
+                </li>
+                <!-- <li class="breadcrumb-item active">Data</li> -->
+              </ol>
+            </nav>
+          </nav>
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
@@ -198,6 +201,8 @@
 
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
+
+    <script src="../planCours.js"></script>
 
     <!-- Vendors JS -->
 
