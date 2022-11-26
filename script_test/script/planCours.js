@@ -1,12 +1,11 @@
-
-let xmlContent = '';
+//let xmlContent = '';
 let courseName = document.getElementById('course-name');
 let node = document.getElementById('node');
 
 
 fetch('../description.xml').then((response) => {
     response.text().then((xml) =>{
-        xmlContent = xml;
+        let xmlContent = xml;
         let parser = new DOMParser();
         let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
         let parties = xmlDOM.querySelectorAll('partie')

@@ -1,2 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cours id="545" titre="Modele De Support" nbreParties="4"><partie id="1" titre="Pr&#xE9;liminaire sur le document" nbreChapitres="1"><chapitre id="1" titre="titre par defaut" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="1" titre="titre par defaut"/></paragraphe></chapitre></partie><partie id="2" titre="Ordre et contenu des parties d&#x2019;un support de cours" nbreChapitres="4"><chapitre id="1" titre="titre par defaut" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="2" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="2" titre="Pages pr&#xE9;liminaires" nbreParagraphes="9"><paragraphe id="1" titre="Le titre du cours" nbreNotions="1"><notion id="1" position="3" titre="titre par defaut"/></paragraphe><paragraphe id="2" titre="La liste de diffusion" nbreNotions="1"><notion id="1" position="4" titre="titre par defaut"/></paragraphe><paragraphe id="3" titre="R&#xE9;sum&#xE9; du support" nbreNotions="1"><notion id="1" position="5" titre="titre par defaut"/></paragraphe><paragraphe id="4" titre="Les objectifs p&#xE9;dagogiques (cas des supports de cours)" nbreNotions="1"><notion id="1" position="6" titre="titre par defaut"/></paragraphe><paragraphe id="5" titre="Les d&#xE9;pendances" nbreNotions="1"><notion id="1" position="7" titre="titre par defaut"/></paragraphe><paragraphe id="6" titre="Sommaire ou table des mati&#xE8;res" nbreNotions="1"><notion id="1" position="8" titre="titre par defaut"/></paragraphe><paragraphe id="7" titre="La liste des tableaux" nbreNotions="1"><notion id="1" position="9" titre="titre par defaut"/></paragraphe><paragraphe id="8" titre="La liste des figures" nbreNotions="1"><notion id="1" position="10" titre="titre par defaut"/></paragraphe><paragraphe id="9" titre="Liste des abr&#xE9;viations, sigles et acronymes" nbreNotions="1"><notion id="1" position="11" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="3" titre="Le d&#xE9;veloppement ou corps du document" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="12" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="4" titre="Les contenus de fin de document" nbreParagraphes="4"><paragraphe id="1" titre="La conclusion" nbreNotions="1"><notion id="1" position="13" titre="titre par defaut"/></paragraphe><paragraphe id="2" titre="Les recommandations" nbreNotions="1"><notion id="1" position="14" titre="titre par defaut"/></paragraphe><paragraphe id="3" titre="Annexes et appendices (s&#x2019;il y a lieu)" nbreNotions="1"><notion id="1" position="15" titre="titre par defaut"/></paragraphe><paragraphe id="4" titre="La bibliographie et la liste de r&#xE9;f&#xE9;rence bibliographique" nbreNotions="1"><notion id="1" position="16" titre="titre par defaut"/></paragraphe></chapitre></partie><partie id="3" titre="Pr&#xE9;sentation et r&#xE8;gles typographiques" nbreChapitres="7"><chapitre id="1" titre="titre par defaut" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="17" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="2" titre="Police de caract&#xE8;res" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="18" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="3" titre="Les interlignes" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="19" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="4" titre="Les titres de chapitres et parties" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="20" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="5" titre="Les tableaux" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="21" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="6" titre="Figures et graphiques (en image)" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="22" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="7" titre="La r&#xE9;daction" nbreParagraphes="5"><paragraphe id="1" titre="Utiliser convenablement les signes de ponctuation." nbreNotions="1"><notion id="1" position="23" titre="titre par defaut"/></paragraphe><paragraphe id="2" titre="Les soulign&#xE9;s, le gras, les espacements de paragraphes" nbreNotions="1"><notion id="1" position="24" titre="titre par defaut"/></paragraphe><paragraphe id="3" titre="La d&#xE9;coration" nbreNotions="1"><notion id="1" position="25" titre="titre par defaut"/></paragraphe><paragraphe id="4" titre="Les listes (&#xE9;num&#xE9;rations)" nbreNotions="1"><notion id="1" position="26" titre="titre par defaut"/></paragraphe><paragraphe id="5" titre="Emploi des abr&#xE9;viations, sigles et acronymes" nbreNotions="1"><notion id="1" position="27" titre="titre par defaut"/></paragraphe></chapitre></partie><partie id="4" titre="ANNEXE" nbreChapitres="4"><chapitre id="1" titre="titre par defaut" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="28" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="2" titre="Exemple1" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="29" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="3" titre="Exemple 2" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="30" titre="titre par defaut"/></paragraphe></chapitre><chapitre id="4" titre="Exemple3" nbreParagraphes="1"><paragraphe id="1" titre="titre par defaut" nbreNotions="1"><notion id="1" position="31" titre="titre par defaut"/></paragraphe></chapitre></partie></cours>
+<cours id="545" titre="Modele De Support" nbreParties="4">
+    <partie id="1" titre="Pr&#xE9;liminaire sur le document" nbreChapitres="1">
+        <chapitre id="1" titre="titre par defaut" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="1" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+    </partie>
+    <partie id="2" titre="Ordre et contenu des parties d&#x2019;un support de cours" nbreChapitres="4">
+        <chapitre id="1" titre="titre par defaut" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="2" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="2" titre="Pages pr&#xE9;liminaires" nbreParagraphes="9">
+            <paragraphe id="1" titre="Le titre du cours" nbreNotions="1">
+                <notion id="1" position="3" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="2" titre="La liste de diffusion" nbreNotions="1">
+                <notion id="1" position="4" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="3" titre="R&#xE9;sum&#xE9; du support" nbreNotions="1">
+                <notion id="1" position="5" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="4" titre="Les objectifs p&#xE9;dagogiques (cas des supports de cours)" nbreNotions="1">
+                <notion id="1" position="6" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="5" titre="Les d&#xE9;pendances" nbreNotions="1">
+                <notion id="1" position="7" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="6" titre="Sommaire ou table des mati&#xE8;res" nbreNotions="1">
+                <notion id="1" position="8" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="7" titre="La liste des tableaux" nbreNotions="1">
+                <notion id="1" position="9" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="8" titre="La liste des figures" nbreNotions="1">
+                <notion id="1" position="10" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="9" titre="Liste des abr&#xE9;viations, sigles et acronymes" nbreNotions="1">
+                <notion id="1" position="11" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="3" titre="Le d&#xE9;veloppement ou corps du document" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="12" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="4" titre="Les contenus de fin de document" nbreParagraphes="4">
+            <paragraphe id="1" titre="La conclusion" nbreNotions="1">
+                <notion id="1" position="13" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="2" titre="Les recommandations" nbreNotions="1">
+                <notion id="1" position="14" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="3" titre="Annexes et appendices (s&#x2019;il y a lieu)" nbreNotions="1">
+                <notion id="1" position="15" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="4" titre="La bibliographie et la liste de r&#xE9;f&#xE9;rence bibliographique" nbreNotions="1">
+                <notion id="1" position="16" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+    </partie>
+    <partie id="3" titre="Pr&#xE9;sentation et r&#xE8;gles typographiques" nbreChapitres="7">
+        <chapitre id="1" titre="titre par defaut" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="17" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="2" titre="Police de caract&#xE8;res" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="18" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="3" titre="Les interlignes" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="19" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="4" titre="Les titres de chapitres et parties" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="20" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="5" titre="Les tableaux" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="21" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="6" titre="Figures et graphiques (en image)" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="22" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="7" titre="La r&#xE9;daction" nbreParagraphes="5">
+            <paragraphe id="1" titre="Utiliser convenablement les signes de ponctuation." nbreNotions="1">
+                <notion id="1" position="23" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="2" titre="Les soulign&#xE9;s, le gras, les espacements de paragraphes" nbreNotions="1">
+                <notion id="1" position="24" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="3" titre="La d&#xE9;coration" nbreNotions="1">
+                <notion id="1" position="25" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="4" titre="Les listes (&#xE9;num&#xE9;rations)" nbreNotions="1">
+                <notion id="1" position="26" titre="titre par defaut"/>
+            </paragraphe>
+            <paragraphe id="5" titre="Emploi des abr&#xE9;viations, sigles et acronymes" nbreNotions="1">
+                <notion id="1" position="27" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+    </partie>
+    <partie id="4" titre="ANNEXE" nbreChapitres="4">
+        <chapitre id="1" titre="titre par defaut" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="28" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="2" titre="Exemple1" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="29" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="3" titre="Exemple 2" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="30" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+        <chapitre id="4" titre="Exemple3" nbreParagraphes="1">
+            <paragraphe id="1" titre="titre par defaut" nbreNotions="1">
+                <notion id="1" position="31" titre="titre par defaut"/>
+            </paragraphe>
+        </chapitre>
+    </partie>
+</cours>
