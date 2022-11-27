@@ -1,4 +1,5 @@
 import { getContent } from "./getMainText.js";
 
-//let contenu = getContent()
-alert(getContent)
+for (const content of getContent) {
+    //alert(content)
+}

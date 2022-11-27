@@ -1,8 +1,13 @@
 
-let getContent
+var getContent = new Map();
+
     $('#mode-edition').on('click', () => {
-        getContent = $('#text-content').prop("innerHTML")
+        getContent.set($('#text-content').html());
+        
     })
 
+    for (const content of getContent) {
+       // alert(content)
+    }
 
 export {getContent}
