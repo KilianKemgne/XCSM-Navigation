@@ -22,6 +22,7 @@ fetch('../description.xml').then((response) => {
             let main = document.createElement('a');
             main.innerText = partie.nodeName + ' ' + partie.id;
             main.setAttribute("class", "menu-link menu-toggle");
+            main.setAttribute("style", "cursor: pointer;");
             
             let ul = document.createElement('ul');
             ul.setAttribute("class", "menu-sub");
@@ -34,14 +35,16 @@ fetch('../description.xml').then((response) => {
                     a.innerText = chapter.nodeName + ' ' + chapter.id;
                     if(chapter.childElementCount == 0){
                         a.setAttribute("class", "menu-link");
+                        a.setAttribute("style", "cursor: pointer;");
                         let li1 = document.createElement('li');
                         li1.appendChild(a);
                         li1.setAttribute("class", "menu-item");
-                        li1.setAttribute("onClick", "displayNotions(this.textContent)");
+                        li1.setAttribute("position", chapter.getAttribute('position'))
+                        li1.setAttribute("onClick", "displayNotions("+chapter.getAttribute('position')+")");
                         ul.appendChild(li1)
-                        //li1.onclick = displayNotions(chapter.position)
                     }else{
                         a.setAttribute("class", "menu-link menu-toggle");
+                        a.setAttribute("style", "cursor: pointer;");
                         let li1 = document.createElement('li');
                         li1.appendChild(a);
                         li1.setAttribute("class", "menu-item");
