@@ -8,7 +8,7 @@ fetch('../description.xml').then((response) => {
         let parser = new DOMParser();
         let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
         let parties = xmlDOM.querySelectorAll('partie')
-        let default_name = 'Nom par default'
+        let default_name = 'Nom par defaut'
         if(xmlDOM.querySelector('cours').hasAttribute('titre') && (xmlDOM.querySelector('cours').getAttribute('titre') !== '') ){
             courseName.innerText = 'Cours : '+xmlDOM.querySelector('cours').getAttribute('titre');
         } else {
@@ -37,7 +37,9 @@ fetch('../description.xml').then((response) => {
                         let li1 = document.createElement('li');
                         li1.appendChild(a);
                         li1.setAttribute("class", "menu-item");
+                        li1.setAttribute("onClick", "displayNotions(this.textContent)");
                         ul.appendChild(li1)
+                        //li1.onclick = displayNotions(chapter.position)
                     }else{
                         a.setAttribute("class", "menu-link menu-toggle");
                         let li1 = document.createElement('li');
@@ -73,6 +75,7 @@ fetch('../description.xml').then((response) => {
             }
             
             mainLi.append(main, ul);
+            mainLi.setAttribute("id", "arbo");
             node.append(mainLi);
        });
 
