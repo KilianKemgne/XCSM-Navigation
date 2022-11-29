@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="../assets/css/demo.css" />
 
+    <link rel="stylesheet" href="../assets/css/style.css">
+
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
@@ -126,11 +128,11 @@
 
           <!-- Style1 Breadcrumb-->
           <nav
-            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme align-content-xl-center"
-            id="layout-navbar"
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme align-content-xl-center container-fluid"
+            id="layout-navbar1"
           >
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb breadcrumb-style1 my-2">
+              <ol class="breadcrumb breadcrumb-style1 my-2" id="nav-list-details">
                 <li class="breadcrumb-item">
                   <a href="index.html">XCSM</a>
                 </li>
@@ -141,16 +143,30 @@
               </ol>
             </nav>
           </nav>
-          <!-- / Navbar -->
 
-          
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme align-content-xl-center container-fluid"
+            id="layout-navbar2"
+          >
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-style1 my-2" id="nav-list-detail">
+                <li class="breadcrumb-item">
+                  <a href="index.html">XCSM</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Acceuil</a>
+                </li>
+                <!-- <li class="breadcrumb-item active">Data</li> -->
+              </ol>
+            </nav>
+          </nav>
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
 
             <!-- Content -->
 
-            <div class="container-xl mt-4 mb-4 ">
+            <div class="container-xl mt-4 mb-2 ">
               <div class="col">
                 <div class="card">
                   <div class="row row-bordered g-0">
@@ -171,7 +187,6 @@
                       </ul>
                       <br>
                       <p class="mx-4">Les documents doivent respecter un modèle afin d'être pris en compte.</p>
-                      <div id="totalRevenueChart" class="px-2"></div>
                     </div>
                   </div>
                 </div>
@@ -180,6 +195,7 @@
             <!-- / Content -->
             <div class="content-backdrop fade"></div>
           </div>
+
           <!-- Content wrapper -->
         </div>
         <!-- / Layout page -->
@@ -187,9 +203,17 @@
 
       <!-- Overlay -->
       <div class="layout-overlay layout-menu-toggle"></div>
+      
+      <div class="pagination justify-content-center align-self-end ">
+        <ul> <!--pages or li are comes from javascript --> </ul>
+      </div>
+
+      
+      
     </div>
     <!-- / Layout wrapper -->
 
+    
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
@@ -206,8 +230,8 @@
     <script src="../assets/js/main.js"></script>
 
     <script src="../planCours.js"></script>
-    <script src="../getMainText.js" type="module"></script>
     <script src="../displayNotions.js"></script>
+    <script src="../assets/js/script.js"></script>
 
     <!-- Page JS -->
   </body>

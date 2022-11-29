@@ -15,14 +15,15 @@ fetch('../description.xml').then((response) => {
             courseName.innerText = 'Cours : '+default_name;
         }  
         parties.forEach((partie) => {
-
+            var chemin = '';
             let mainLi = document.createElement('li');
-            mainLi.setAttribute("class", "menu-item")
+            mainLi.setAttribute("class", "menu-item");
 
             let main = document.createElement('a');
             main.innerText = partie.nodeName + ' ' + partie.id;
             main.setAttribute("class", "menu-link menu-toggle");
             main.setAttribute("style", "cursor: pointer;");
+            chemin = main.innerText;
             
             let ul = document.createElement('ul');
             ul.setAttribute("class", "menu-sub");
@@ -31,8 +32,10 @@ fetch('../description.xml').then((response) => {
                 let ul = document.createElement('ul');
                     ul.setAttribute("class", "menu-sub ms-3"); 
                 for (const chapter of chap.children) {
+                    let nchemin = '';
                     let a = document.createElement('a');
                     a.innerText = chapter.nodeName + ' ' + chapter.id;
+                    nchemin += a.innerText;
                     if(chapter.childElementCount == 0){
                         a.setAttribute("class", "menu-link");
                         a.setAttribute("style", "cursor: pointer;");
@@ -41,6 +44,7 @@ fetch('../description.xml').then((response) => {
                         li1.setAttribute("class", "menu-item");
                         li1.setAttribute("position", chapter.getAttribute('position'))
                         li1.setAttribute("onClick", "displayNotions("+chapter.getAttribute('position')+")");
+                        li1.setAttribute("chemin", chemin+' '+nchemin)
                         ul.appendChild(li1)
                     }else{
                         a.setAttribute("class", "menu-link menu-toggle");
@@ -58,6 +62,7 @@ fetch('../description.xml').then((response) => {
             for (const chap of partie.children) {
                 let a = document.createElement('a');
                 a.innerText = chap.nodeName + ' ' + chap.id;
+                chemin += a.innerText;
                 a.setAttribute("href", "javascript:void(0)");
                 if(chap.childElementCount == 0){
                     a.setAttribute("class", "menu-link");
@@ -71,7 +76,7 @@ fetch('../description.xml').then((response) => {
                     let lil = document.createElement('li');
                     lil.appendChild(a);
                     lil.setAttribute("class", "menu-item");
-                    addChild(chap, lil)
+                    addChild(chap, lil, chemin)
                     
                     ul.appendChild(lil);
                 }

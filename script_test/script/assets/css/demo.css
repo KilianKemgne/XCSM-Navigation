@@ -2,7 +2,9 @@
 * demo.css
 * File include item demo only specific css only
 ******************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+*{font-family: 'Poppins', sans-serif;}
 .menu .app-brand.demo {
   height: 64px;
   margin-top: 12px;
@@ -104,4 +106,17 @@
 .layout-demo-info {
   text-align: center;
   margin-top: 1rem;
+}
+
+#layout-navbar2{
+  display: none !important;
+}
+
+@media screen and (max-width: 825px) {
+  #layout-navbar1{
+    display: none !important;
+  }
+  #layout-navbar2{
+    display: block !important;
+  }
 }

@@ -43,7 +43,7 @@
     <script src="../assets/vendor/js/helpers.js"></script>
     
     <!-- Document editor -->
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.2/decoupled-document/ckeditor.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
@@ -121,7 +121,7 @@
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <li class="nav-item lh-1 me-1">
-                  <button class="btn btn-outline-primary">Enregistrer</button>
+                  <button class="btn btn-outline-primary" id="save-notion">Enregistrer</button>
                 </li>
                 <li class="nav-item lh-1 me-1">
                   <a href="index.html"><button class="btn btn-outline-primary">Quitter</button></a>
@@ -134,15 +134,32 @@
 
           <nav
             class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme align-content-xl-center"
-            id="layout-navbar"
+            id="layout-navbar1"
           >
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb breadcrumb-style1 my-2">
+              <ol class="breadcrumb breadcrumb-style1 my-2" id="nav-list-details">
                 <li class="breadcrumb-item">
                   <a href="index.html">XCSM</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="index.html">Edition</a>
+                </li>
+                <!-- <li class="breadcrumb-item active">Data</li> -->
+              </ol>
+            </nav>
+          </nav>
+
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme align-content-xl-center container-fluid"
+            id="layout-navbar2"
+          >
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-style1 my-2" id="nav-list-detail">
+                <li class="breadcrumb-item">
+                  <a href="index.html">XCSM</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="index.html">Acceuil</a>
                 </li>
                 <!-- <li class="breadcrumb-item active">Data</li> -->
               </ol>
@@ -156,26 +173,14 @@
 
             <div class="container-xl mt-4 mb-4 ">
               <div class="col">
-                <div class="card">
-                  <div id="toolbar-container"></div>
-
-                  <!-- This container will become the editable. -->
+                <div class="card" id="edit-content">
                   <div id="editor">
-                    <!-- <p>This is the initial editor content.</p> -->
+
                   </div>
-
-                  <script>
-                      DecoupledEditor
-                          .create( document.querySelector( '#editor' ) )
-                          .then( editor => {
-                              const toolbarContainer = document.querySelector( '#toolbar-container' );
-
-                              toolbarContainer.appendChild( editor.ui.view.toolbar.element );
-                          } )
-                          .catch( error => {
-                              console.error( error );
-                          } );
-                  </script>
+                  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js'></script>  	
+                  <!-- <script>
+                    var editor = new FroalaEditor('#edit');		
+                  </script> -->
                 </div>
               </div>
             </div>
@@ -203,8 +208,8 @@
     <!-- endbuild -->
 
     <script src="../planCours.js"></script>
-
-    <script src="../edition.js" type="module"></script>
+    <script src="../editNotions.js"></script>
+    <script src="../displayNotionsEditionMode.js"></script>
 
     <!-- Vendors JS -->
 

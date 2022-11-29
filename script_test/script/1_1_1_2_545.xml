@@ -1,2 +1,8 @@
 <?xml version="1.0"?>
-<notion label="Notion par defaut">           <titre>titre par defaut</titre>           <contenu>             <texte>Nous d&#xE9;buterons avec les pages pr&#xE9;liminaires plac&#xE9;es au d&#xE9;but d&#x2019;un document. Elles visent essentiellement &#xE0; identifier le support de cours, l&#x2019;auteur, les objectifs, les d&#xE9;pendances. On y retrouve &#xE9;galement une br&#xE8;ve description de  la teneur du support et de sa structure.</texte>           </contenu>         </notion>
+<notion label="Notion par defaut">
+    <titre>titre par defaut</titre>           
+    <contenu>             
+        <texte class="card-header m-0 me-2 pb-3">Nous d&#xE9;buterons avec les pages pr&#xE9;liminaires plac&#xE9;es au d&#xE9;but d&#x2019;un document. Elles visent essentiellement &#xE0; identifier le support de cours, l&#x2019;auteur, les objectifs, les d&#xE9;pendances. On y retrouve &#xE9;galement une br&#xE8;ve description de  la teneur du support et de sa structure.</texte>
+        <video>ModeleDeSupport.videos/FIFA World Cup 2022 Teaser.mp4</video>
+    </contenu>
+</notion>
