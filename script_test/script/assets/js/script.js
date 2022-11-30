@@ -1,7 +1,7 @@
 // selecting required element
 const element = document.querySelector(".pagination ul");
 var totalPages;
-let page = 10;
+let page = 1;
 
 fetch('../descriptionNotions.xml').then((response) => {
   response.text().then((xml) => {
