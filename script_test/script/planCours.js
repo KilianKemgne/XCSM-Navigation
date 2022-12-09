@@ -30,12 +30,20 @@ fetch('../description.xml').then((response) => {
 
             function addChild(chap, li) {
                 let ul = document.createElement('ul');
-                    ul.setAttribute("class", "menu-sub ms-3"); 
+                    ul.setAttribute("class", "menu-sub ms-4"); 
                 for (const chapter of chap.children) {
                     let nchemin = '';
                     let a = document.createElement('a');
+                    // let icon = document.createElement("i");
+                    // if(chapter.nodeName == 'paragraphe'){
+                    //     icon.setAttribute('class','bx bxl-jquery');
+                    // }
+                    // let div = document.createElement("div");
+                    // div.setAttribute('class','ms-2');
                     a.innerText = chapter.nodeName + ' ' + chapter.id;
                     nchemin += a.innerText;
+                    // a.appendChild(icon);
+                    // a.appendChild(div)
                     if(chapter.childElementCount == 0){
                         a.setAttribute("class", "menu-link");
                         a.setAttribute("style", "cursor: pointer;");
@@ -90,3 +98,4 @@ fetch('../description.xml').then((response) => {
        
     });
 });
+

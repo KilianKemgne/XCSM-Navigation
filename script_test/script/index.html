@@ -27,26 +27,26 @@
     />
 
     <!-- Icons. Uncomment required icon fonts -->
-    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="./assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="./assets/css/demo.css" />
 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Vendors CSS -->
-    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="../assets/vendor/js/helpers.js"></script>
+    <script src="./assets/vendor/js/helpers.js"></script>
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="../assets/js/config.js"></script>
+    <script src="./assets/js/config.js"></script>
   </head>
 
   <body>
@@ -59,7 +59,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <span class="app-brand-logo demo me-4">
-                <img src="../image/LOGO-POLYTECHNIQUE.png" alt="SABC" width="60px" height="60px">
+                <img src="./image/LOGO-POLYTECHNIQUE.png" alt="SABC" width="60px" height="60px">
               </span>
               <span class="app-brand-text demo menu-text fw-bolder ">XCSM</span>
             </a>
@@ -161,11 +161,29 @@
             </nav>
           </nav>
 
+          <!-- <div class="d-flex flex-row ">
+             <nav class="menu">
+              <input type="checkbox" name="menu-open" id="menu-open" class="menu-open">
+              <label for="menu-open" class="menu-open-button">
+                  <span class="hamburger hamburger-1"></span>
+                  <span class="hamburger hamburger-2"></span>
+                  <span class="hamburger hamburger-3"></span>
+              </label>
+      
+              <a href="#" class="menu-item"><i class="fa fa-heartbeat"></i></a>
+              <a href="#" class="menu-item"><i class="fa fa-plus"></i></a>
+              <a href="#" class="menu-item"><i class="fa fa-heart"></i></a>
+              <a href="#" class="menu-item"><i class="fa fa-envelope"></i></a>
+              <a href="#" class="menu-item"><i class="fa fa-cog"></i></a>
+            </nav> 
+            
+          </div> -->
+
           <nav
-            class="layout-navbar navbar-nav flex-row align-items-center ms-auto mt-3 me-4"
+            class="layout-navbar navbar-nav flex-row align-items-center ms-auto mt-3 me-4 "
             id="layout-navbar"
           >
-            <div class="pagination navbar-nav flex-row align-items-center ms-auto mt-3">
+            <div class="pagination navbar-nav flex-row align-items-center ms-auto mt-3 me-4">
               <ul> <!--pages or li are comes from javascript --> </ul>
             </div>
           </nav>
@@ -177,7 +195,7 @@
 
             <div class="container-xl mt-4 mb-2 ">
               <div class="col">
-                <div class="card">
+                <div class="card" id="main-text-content">
                   <div class="row row-bordered g-0">
                     <div class="col" id="text-content">
                       <h3 class="card-header m-0 me-2 pb-3">Bienvenue</h3>
@@ -223,22 +241,23 @@
     
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../assets/vendor/libs/popper/popper.js"></script>
-    <script src="../assets/vendor/js/bootstrap.js"></script>
-    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="./assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="./assets/vendor/libs/popper/popper.js"></script>
+    <script src="./assets/vendor/js/bootstrap.js"></script>
+    <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="./assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="../assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-    <script src="../planCours.js"></script>
-    <script src="../displayNotions.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="./planCours.js"></script>
+    <script src="./displayNotions.js"></script>
+    <script src="./script.js"></script>
+    <script src="./getPosition.js"></script>
 
     <!-- Page JS -->
   </body>
