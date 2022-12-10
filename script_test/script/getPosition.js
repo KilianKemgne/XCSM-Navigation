@@ -7,11 +7,7 @@ function getPosition(number) {
             let parser = new DOMParser();
             let xmlDOM = parser.parseFromString(xmlContent, 'application/xml')
             let notions = xmlDOM.querySelectorAll('notion');
-
-            alert(notions[number-1].getAttribute('position'))
+            alert(notions[number-1].getAttribute('id'))
         })
     })
 }
-
-
-//module.exports = {getPosition}

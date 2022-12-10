@@ -1,3 +1,5 @@
+//import { loadJSON, saveJSON } from "./getLectureTime.js";
+
 let textContent = document.getElementById('text-content');
 let nav_details = document.getElementById('nav-list-details');
 var content = textContent.innerHTML;
@@ -95,29 +97,25 @@ $('#mode-edition').on('click', () => {
     localStorage.setItem('nav_bar_details', nav_bar_details);
 })
 
-function dateDiff(date1, date2){
-    var diff = {}                           // Initialisation du retour
-    var tmp = date2 - date1;
- 
-    tmp = Math.floor(tmp/1000);             // Nombre de secondes entre les 2 dates
-    diff.sec = tmp % 60;                    // Extraction du nombre de secondes
- 
-    tmp = Math.floor((tmp-diff.sec)/60);    // Nombre de minutes (partie entière)
-    diff.min = tmp % 60;                    // Extraction du nombre de minutes
- 
-    tmp = Math.floor((tmp-diff.min)/60);    // Nombre d'heures (entières)
-    diff.hour = tmp % 24;                   // Extraction du nombre d'heures
-     
-    tmp = Math.floor((tmp-diff.hour)/24);   // Nombre de jours restants
-    diff.day = tmp;
-     
-    return diff;
-}
 localStorage.setItem('howlong', 0)
-$('body').on('DOMSubtreeModified', '#main-text-content', () => {
+localStorage.setItem('prev', 0)
+$('#main-text-content').bind('DOMNodeInserted', () => {
     let date = new Date();
-    let datedif = dateDiff(date, (new Date(localStorage.getItem('howlong'))));
-    localStorage.setItem('prev', date)
-    localStorage.setItem('dif', datedif)
-    console.log(datedif.sec);
+    //console.log(localStorage.getItem('prev'));
+    if(localStorage.getItem('prev') == 0){
+        localStorage['prev'] = date;
+    } else {
+        let diff = new Date(date - (new Date(localStorage.getItem('prev'))))
+        // let key = ""+localStorage.getItem('currentNotion');
+        // let value = ""+diff.getMinutes()+'-'+diff.getSeconds()+'-'+diff.getMilliseconds();
+        // let jsonData = loadJSON('../data.json');
+        // let donnee = {key : value}
+        // jsonData.push(donnee);
+        // saveJSON('../data.json', jsonData);
+        console.log(diff.getMinutes()+'-'+diff.getSeconds()+'-'+diff.getMilliseconds());
+        localStorage['howlong'] = diff.getMinutes()+'-'+diff.getSeconds()+'-'+diff.getMilliseconds()
+        localStorage['prev'] = date;
+    }
 })
+
+

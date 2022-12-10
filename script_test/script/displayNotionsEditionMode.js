@@ -12,6 +12,7 @@ function displayNotions(Position) {
             notions.forEach((notion) => {
                 if(notion.getAttribute('position') == Position){
                     fetch('../'+notion.id+'.xml').then((response) => {
+                        localStorage['currentNotion'] =  notion.id;
                         response.text().then((xml) => {
                             let xmlContent1 = xml;
                             let parser1 = new DOMParser();
