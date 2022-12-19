@@ -119,3 +119,11 @@ $('#main-text-content').bind('DOMNodeInserted', () => {
         
     }
 })
+// readMyjsonFile()
+// async function readMyjsonFile(){
+//     let response = await Neutralino.filesystem.readFile({
+//         fileName: '../description.xml'
+//     });
+//     console.log('enter');
+//     console.log(`Content: ${response}`);
+// }

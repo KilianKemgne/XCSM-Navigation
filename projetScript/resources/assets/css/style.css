@@ -160,7 +160,7 @@
 
 #layout-navbar{
   box-shadow: 0 0 0.375rem 0.25rem rgba(161, 172, 184, 0.15);
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .pagination ul{

@@ -38,67 +38,8 @@
   </head>
 
   <body>
-    <!-- <input type="checkbox" id="toggle">
-
-    <label class="toggle" for="toggle">
-        <i class="bx bxs-sun"></i>
-        <i class="bx bx-moon"></i>
-        <span class="ball"></span>
-    </label> -->
-    <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
-        <!-- Menu -->
-
-        <!-- <nav class="sidebar close">
-          <header>
-            <div class="app-brand demo">
-              <a href="index.html" class="app-brand-link">
-                <span class="app-brand-logo demo me-4">
-                  <img src="./image/LOGO-POLYTECHNIQUE.png" alt="SABC" width="60px" height="60px">
-                </span>
-                <span class="app-brand-text demo menu-text fw-bolder ">XCSM</span>
-              </a>
-  
-              <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
-                <i class="bx bx-chevron-left bx-sm align-middle"></i>
-              </a>
-            </div>
-  
-              <i class='bx bx-chevron-right toggle'></i>
-          </header>
-
-          
-  
-          <div class="menu-bar">
-            <div class="menu-inner-shadow"></div>
-
-            <ul class="menu-inner py-1" id="node">
-              <li class="menu-item">
-                <a href="index.html" class="menu-link">
-                  <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                  <div data-i18n="Analytics">Acceuil</div>
-                </a>
-              </li>
-              <li class="menu-header small text-uppercase" onclick=""><span class="menu-header-text" id="course-name">Plan du cours</span></li>
-            </ul>
-  
-              <div class="bottom-content">
-                  <li class="mode">
-                      <div class="sun-moon">
-                          <i class='bx bx-moon icon moon'></i>
-                          <i class='bx bx-sun icon sun'></i>
-                      </div>
-                      <span class="mode-text text">Dark mode</span>
-  
-                      <div class="toggle-switch">
-                          <span class="switch"></span>
-                      </div>
-                  </li>  
-              </div>
-          </div>
-  
-      </nav> -->
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
@@ -127,23 +68,6 @@
             <li class="menu-header small text-uppercase" onclick=""><span class="menu-header-text" id="course-name">Plan du cours</span></li>
 
           </ul>
-          
-          
-          <!-- <div class="menu-bar">
-            <div class="bottom-content">
-              <li class="mode">
-                  <div class="sun-moon">
-                      <i class='bx bx-moon icon moon'></i>
-                      <i class='bx bx-sun icon sun'></i>
-                  </div>
-                  <span class="mode-text text">Dark mode</span>
-
-                  <div class="toggle-switch">
-                      <span class="switch"></span>
-                  </div>
-              </li>
-            </div>
-          </div> -->
         </aside>
         <!-- / Menu -->
 
@@ -176,7 +100,6 @@
                 </div>
               </div>
               <!-- /Search -->
-
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <li class="nav-item">
@@ -192,46 +115,7 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameBasic" class="form-label">Name</label>
-                            <input type="text" id="nameBasic" class="form-control" placeholder="Enter Name" />
-                          </div>
-                        </div>
-                        <div class="row g-2">
-                          <div class="col mb-0">
-                            <label for="emailBasic" class="form-label">Email</label>
-                            <input type="text" id="emailBasic" class="form-control" placeholder="xxxx@xxx.xx" />
-                          </div>
-                          <div class="col mb-0">
-                            <label for="dobBasic" class="form-label">DOB</label>
-                            <input type="text" id="dobBasic" class="form-control" placeholder="DD / MM / YY" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                  </div>
+                
                 </li>
                 <li class="nav-item lh-1 me-1 ms-2">
                   <a href="./edition.html"><button class="btn btn-outline-primary" id="mode-edition">Mode Edition</button></a>
@@ -239,6 +123,46 @@
               </ul>
             </div>
           </nav>
+
+          <div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel1">Filtre</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col mb-3">
+                      <label for="nameBasic" class="form-label">Partie</label>
+                      <input type="number" id="nameBasic" class="form-control" placeholder="Numero partie" />
+                    </div>
+                  </div>
+                  <div class="row g-2">
+                    <div class="col mb-0">
+                      <label for="emailBasic" class="form-label">Chapitre</label>
+                      <input type="number" id="emailBasic" class="form-control" placeholder="Numero chapitre" />
+                    </div>
+                    <div class="col mb-0">
+                      <label for="dobBasic" class="form-label">Paragraphe</label>
+                      <input type="number" id="dobBasic" class="form-control" placeholder="Numero paragraphe" />
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary" id="filtre">Filtrer</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <!-- Style1 Breadcrumb-->
           <nav
@@ -293,15 +217,121 @@
             
           </div> -->
 
-          <nav
+          <!-- <nav
             class="layout-navbar navbar-nav flex-row align-items-center ms-auto mt-3 me-4 "
             id="layout-navbar"
+          > -->
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
           >
-            <div class="pagination navbar-nav flex-row align-items-center ms-auto mt-3 me-4">
-              <ul> <!--pages or li are comes from javascript --> </ul>
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#largeModal" id="showRemarque">Remarques</button>
+                  <button class="btn btn-outline-primary me-2">Complements</button>
+                  <button class="btn btn-outline-primary">Evaluations</button>
+                </div>
+              </div>
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+                <li class="nav-item">
+                  <div class="pagination navbar-nav flex-row align-items-center ms-auto">
+                    <ul>  </ul>
+                  </div> 
+                </li>
+                <!-- <li class="nav-item lh-1 me-1 ms-2">
+                  <a href="./edition.html"><button class="btn btn-outline-primary" id="mode-edition">Mode Edition</button></a>
+                </li> -->
+              </ul>
             </div>
+            <!--<div class="row g-2">
+              <div class="col mb-0">
+                <div style="background-color: aquamarine;"></div>
+              </div>
+              <div class="col mb-0">
+                <div style="background-color: rebeccapurple;"></div>
+                 <div class="pagination navbar-nav flex-row align-items-center ms-auto mt-3 me-4">
+                  <ul>  </ul>
+                </div> 
+              </div>
+            </div>-->
+            
           </nav>
 
+          <!-- Large Modal -->
+          <div class="modal fade" id="largeModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content" id="largeModal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel3">Remarques</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+
+                </div>
+                <div class="modal-body" id="getRemarque">
+                  <!-- <div class="row">
+                    <div class="bs-toast toast fade show col mx-3 mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <div class="me-auto fw-semibold">Bootstrap</div>
+                        <small>11 mins ago</small>
+                      </div>
+                      <div class="toast-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae voluptate porro amet repellat est, ducimus hic unde neque consectetur nihil itaque illo suscipit, error atque quia inventore ullam distinctio.
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">Nouvelle Remarque</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalCenterTitle">Remarque</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col mb-3">
+                      <label for="nameWithTitle" class="form-label">Nouvelle Remarque</label>
+                      <input
+                        type="text"
+                        id="nameWithTitle"
+                        class="form-control"
+                        placeholder="Enter votre commentaire"
+                      />
+                    </div> 
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary" id="saveRemarque" data-bs-dismiss="modal">Enregistrer</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Content wrapper -->
           <div class="content-wrapper">
 
@@ -379,6 +409,7 @@
     <script src="js/script.js"></script>
     <script src="js/getPosition.js"></script>
     <script src="js/search.js"></script>
-    <script src="js/test.js"></script>
+    <script src="js/filtre.js"></script>
+    <script src="js/remarque.js"></script>
   </body>
 </html>
